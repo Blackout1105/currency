@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiWsPath: 'wss://ws-sandbox.coinapi.io/v1/',
+  apiRestPath: 'https://rest-sandbox.coinapi.io/',
+  apiKey: 'A61CF4E6-BD78-41E4-86CE-8E4DAF1BA065',
+  apiRestPathOptional: 'https://rest.coinapi.io/',  // need to use because of bad data from API
 };
 
 /*

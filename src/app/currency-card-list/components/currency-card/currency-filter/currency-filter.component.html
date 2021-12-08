@@ -1,0 +1,19 @@
+<form class="currency-form" [formGroup]="form" (ngSubmit)="onFormSubmit()">
+  <div class="controls">
+    <select [formControl]="currencySelectControl">
+      <option
+        *ngFor="let option of options"
+        [value]="option.value.optionId">
+        {{option.label}}
+      </option>
+    </select>
+  </div>
+  <div class="submit-button-wrap">
+    <button
+      class="submit-button"
+      type="submit"
+      [disabled]="!form.dirty || (canSubmit$ | async)">
+      Subscribe
+    </button>
+  </div>
+</form>

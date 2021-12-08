@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+html, body, div {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.entity-wrap {
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 7px;
+  padding: 10px 15px;
+}
